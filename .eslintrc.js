@@ -5,12 +5,10 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
     'prettier',
     'plugin:jest/recommended',
   ],
-  plugins: ['@typescript-eslint', 'import', 'prettier', 'jest'],
+  plugins: ['@typescript-eslint', 'prettier', 'jest'],
   env: {
     es6: true,
     browser: true,
