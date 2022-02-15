@@ -1,0 +1,30 @@
+{
+  "name": "editor",
+  "author": "JaeSeoKim <devjaeseo@gmail.com>",
+  "license": "MIT",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "umd": "./dist/index.min.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-s build:*",
+    "build:source": "rollup -c",
+    "build:typings": "tsc --project tsconfig.build.json",
+    "build:banner": "node --experimental-json-modules ./tsBannerGenerator.js",
+    "test": "jest",
+    "test:watch": "jest --watch-all",
+    "test:coveage": "jest --coverage",
+    "lint": "run-s lint:*",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts"
+  ]
+}

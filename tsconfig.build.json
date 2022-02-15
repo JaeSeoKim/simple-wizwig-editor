@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "removeComments": false,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "paths": {}
+  },
+  "exclude": ["**/*.story.*", "**/*.test.*", "dist"],
+  "include": []
+}
