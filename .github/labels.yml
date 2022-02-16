@@ -1,0 +1,32 @@
+# 이슈. PR 타입
+- name: 'Type: Feature'
+  color: fdffb6
+  description: '새로운 기능'
+- name: 'Type: Enhancement'
+  color: caffbf
+  description: '개선 사항'
+- name: 'Type: Bug'
+  color: d73a4a
+  description: '오류 사항'
+- name: 'Type: Documentation'
+  color: 0075ca
+  description: 문서화에 대한 모든 작업!
+
+# 해결 이유
+- name: 'Resolution: Duplicate'
+  color: cfd3d7
+  description: 중복돤 이슈, PR!
+- name: 'Resolution: Invalid'
+  color: e4e669
+  description: 잘못된 이슈, PR!
+
+# 우선 순위
+- name: 'Priority: High'
+  description: 우선순위 높음
+  color: d00000
+- name: 'Priority: Medium'
+  description: 우선순위 중간
+  color: e85d04
+- name: 'Priority: Low'
+  description: 우선순위 낮음
+  color: faa307
