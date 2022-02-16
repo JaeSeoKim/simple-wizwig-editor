@@ -1,7 +1,8 @@
-import pkg from "./package.json";
-import rootPkg from "../../package.json";
 import fs from "fs";
 import glob from "glob";
+
+const pkg = JSON.parse(fs.readFileSync("./package.json").toString('utf-8'));
+const rootPkg = JSON.parse(fs.readFileSync("../../package.json").toString('utf-8'));
 
 const tsVersion = /[0-9.]+/.exec(rootPkg.devDependencies.typescript)[0];
 

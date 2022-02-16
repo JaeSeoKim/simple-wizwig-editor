@@ -12,16 +12,16 @@
   "umd": "./dist/index.min.js",
   "scripts": {
     "dev": "vite",
-    "build": "run-s build:*",
+    "build": "run-s 'build:*'",
     "build:source": "rollup -c",
     "build:typings": "tsc --project tsconfig.build.json",
-    "build:banner": "node --experimental-json-modules ./tsBannerGenerator.js",
+    "build:banner": "node ./tsBannerGenerator.js",
     "test": "jest",
     "test:watch": "jest --watch-all",
     "test:coveage": "jest --coverage",
-    "lint": "run-s lint:*",
-    "lint:eslint": "eslint .",
-    "lint:prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
+    "lint": "run-s 'lint:*'",
+    "lint:prettier": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:eslint": "eslint ."
   },
   "files": [
     "dist/*.js",

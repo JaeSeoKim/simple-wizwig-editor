@@ -7,6 +7,6 @@
     "declaration": true,
     "paths": {}
   },
-  "exclude": ["**/*.story.*", "**/*.test.*", "dist"],
+  "exclude": ["**/*.story.*", "**/*.test.*", "**/*.spec.*", "dist"],
   "include": []
 }
