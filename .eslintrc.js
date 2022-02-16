@@ -17,6 +17,8 @@ module.exports = {
   },
   ignorePatterns: ['node_modules/*', 'dist'],
   rules: {
+    'prettier/prettier': 'error',
+
     'import/no-named-as-default': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
