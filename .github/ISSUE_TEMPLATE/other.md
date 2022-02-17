@@ -1,5 +1,5 @@
 ---
-name: "🤔 Other Report"
+name: '🤔 Other Report'
 about: 아직 정의 되지 않은 여러가지 이슈에 대한 사항
 title: 'Other: '
 labels:

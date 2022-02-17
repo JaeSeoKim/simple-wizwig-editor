@@ -5,9 +5,9 @@
 ## install
 
 ```bash
-npm install
+yarn
 ```
 
 ```bash
-npm run bootstrap
+yarn bootstrap
 ```

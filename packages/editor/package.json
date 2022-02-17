@@ -7,7 +7,7 @@
   "type": "module",
   "source": "./src/index.ts",
   "types": "./dist/index.d.ts",
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.esm.js",
   "umd": "./dist/index.min.js",
   "scripts": {
@@ -18,10 +18,7 @@
     "build:banner": "node ./tsBannerGenerator.js",
     "test": "jest",
     "test:watch": "jest --watch-all",
-    "test:coveage": "jest --coverage",
-    "lint": "run-s 'lint:*'",
-    "lint:prettier": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:eslint": "eslint ."
+    "test:coveage": "jest --coverage"
   },
   "files": [
     "dist/*.js",

@@ -3,13 +3,12 @@ import typescript from '@rollup/plugin-typescript';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 import banner from 'rollup-plugin-banner';
-import clean from 'rollup-plugin-clean';
 
 export default _CLIArgs => {
   /**
    * @type {import('rollup').RollupOptions}
    */
-  return {
+  const option = {
     input: 'src/index.ts',
     output: [
       { file: 'dist/index.js', format: 'cjs', exports: 'auto' },
@@ -22,7 +21,6 @@ export default _CLIArgs => {
       { file: 'dist/index.esm.js', format: 'esm' },
     ],
     plugins: [
-      clean(),
       typescript(),
       commonjs(),
       nodeResolve(),
@@ -37,4 +35,5 @@ export default _CLIArgs => {
       ),
     ],
   };
+  return option;
 };

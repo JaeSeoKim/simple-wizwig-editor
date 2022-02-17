@@ -1,5 +1,5 @@
 ---
-name: "📖 Documentation Request"
+name: '📖 Documentation Request'
 about: 문서 작업에 대한 요청
 title: 'Docs: '
 labels: 'Type: Documentation'

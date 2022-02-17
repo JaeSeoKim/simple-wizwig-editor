@@ -1,5 +1,5 @@
 ---
-name: "🐛 Bug Report"
+name: '🐛 Bug Report'
 about: 오류에 대한 여러가지 사항에 대한 리포트!
 title: 'Bug: '
 labels: 'Type: Bug'
