@@ -1,10 +1,13 @@
-export declare interface EditorOption {}
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { default as EditorComponent } from './components/Editor';
 
+export declare interface EditorOption {}
 /**
  * Wizwig-Editor
  */
 class Editor {
-  private element: HTMLElement;
+  element: HTMLElement;
 
   constructor(
     /**
@@ -18,14 +21,12 @@ class Editor {
   ) {
     this.element = element;
 
-    const wwEditor = document.createElement('div');
-    wwEditor.contentEditable = 'true';
-    wwEditor.innerHTML = '<h1>Hello World!</h1>';
-
-    this.element.appendChild(wwEditor);
+    ReactDOM.render(<EditorComponent />, element);
   }
 
   destory() {
+    ReactDOM.unmountComponentAtNode(this.element);
+
     Object.keys(this).forEach(prop => {
       delete this[prop as keyof this];
     });

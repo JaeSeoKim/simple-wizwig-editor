@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Editor from '@/editor';
 
 describe('editor', () => {
@@ -13,16 +14,16 @@ describe('editor', () => {
     });
 
     afterEach(() => {
-      document.body.removeChild(container);
       editor.destory();
+      document.body.removeChild(container);
     });
 
     test('constructor', () => {
-      const editableElement = container.querySelector('div');
+      const editableElement = container.querySelector('#editor')!;
       expect(editableElement).not.toBeNull();
-      expect(editableElement?.contentEditable).toBe('true');
-      const placeholder = `<h1>Hello World!</h1>`;
-      expect(editableElement?.innerHTML).toBe(placeholder);
+
+      const toolboxElement = editableElement.querySelector('.toolbox')!;
+      expect(toolboxElement).not.toBeNull();
     });
   });
 });

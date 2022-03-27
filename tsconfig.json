@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "skipLibCheck": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -13,6 +14,7 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "sourceMap": false,
-    "noEmit": true
+    "noEmit": true,
+    "jsx": "preserve"
   }
 }

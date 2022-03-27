@@ -2,7 +2,13 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier', 'plugin:jest/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'plugin:react/recommended',
+    'plugin:jest/recommended',
+  ],
   plugins: ['@typescript-eslint', 'prettier', 'jest'],
   env: {
     es6: true,
@@ -20,5 +26,6 @@ module.exports = {
       { caughtErrors: 'none', argsIgnorePattern: '^_', ignoreRestSiblings: true },
     ],
     '@typescript-eslint/no-empty-interface': 'off',
+    'react/prop-types': 'off',
   },
 };
